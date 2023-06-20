@@ -1,9 +1,9 @@
-import List from '@/components/List'
+import HomeHeader from "@/components/HomeHeader"
 
 export default function Home () {
   return (
-    <div>
-      <List/>
-    </div>
+    <>
+      <HomeHeader />
+    </>
   )
 }

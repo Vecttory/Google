@@ -17,5 +17,7 @@
         "react"
     ],
     "rules": {
+        "quotes": ["error", "double"],
+        "jsx-quotes": [2, "prefer-double"]
     }
 }
