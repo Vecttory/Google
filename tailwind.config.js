@@ -4,8 +4,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
-    extend: {}
+    extend: {
+      maxWidth: {
+        "9/10": "90%"
+      }
+    }
   },
-  plugins: [],
-  darkMode: "class"
+  plugins: []
 }
