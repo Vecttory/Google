@@ -8,6 +8,7 @@ export default function Home () {
       <HomeHeader />
       <div className="flex flex-col items-center mt-24">
         <Image
+          priority
           width={300}
           height={100}
           alt="Google logo"
