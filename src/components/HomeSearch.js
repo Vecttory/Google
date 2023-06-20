@@ -30,7 +30,7 @@ const HomeSearch = () => {
     <>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-row w-full mt-5 mx-auto max-w-[90%] border border-gray-200 px-5 py-3 rounded-full hover:shadow-md transition-shadow focus-within:shadow-md duration-200 sm:max-w-xl lg:max-w-2x"
+        className="flex flex-row w-full mt-5 mx-auto max-w-[90%] border border-gray-200 px-5 py-3 rounded-full hover:shadow-md transition-shadow focus-within:shadow-md duration-200 sm:max-w-xl lg:max-w-2xl"
       >
         <AiOutlineSearch className="text-xl text-gray-500 mr-3"/>
         <input type="text" ref={inputRef} className="flex-grow focus:outline-none"/>
