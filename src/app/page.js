@@ -1,12 +1,13 @@
 import HomeHeader from "@/components/HomeHeader"
 import HomeSearch from "@/components/HomeSearch"
 import Image from "next/image"
+import Footer from "@/components/Footer"
 
 export default function Home () {
   return (
-    <>
+    <div className="flex flex-col min-h-screen h-screen">
       <HomeHeader />
-      <div className="flex flex-col items-center mt-24">
+      <div className="flex flex-col items-center flex-1 justify-center">
         <Image
           priority
           width={300}
@@ -16,6 +17,7 @@ export default function Home () {
         />
         <HomeSearch/>
       </div>
-    </>
+      <Footer />
+    </div>
   )
 }

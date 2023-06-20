@@ -36,7 +36,7 @@ const HomeSearch = () => {
         <input type="text" ref={inputRef} className="flex-grow focus:outline-none"/>
         <BsFillMicFill className="text-lg"/>
       </form>
-      <div className="flex flex-col space-y-4 sm:space-y-0 sm:space-x-4 justify-center sm:flex-row mt-8">
+      <div className="flex flex-col space-y-4 sm:space-y-0 sm:space-x-4 justify-center sm:flex-row m-8">
         <button className="btn" onClick={handleSubmit}>Google Search</button>
         <button
           onClick={randomSearch}
