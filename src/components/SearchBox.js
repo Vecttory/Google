@@ -19,7 +19,6 @@ const SearchBox = () => {
   function handleSubmit (e) {
     e.preventDefault()
     if (!inputRef.current.value.trim() || inputRef.current.value === searchTerm) return
-    console.log("fdjshkafhdsa")
     router.push(`/search/web?searchTerm=${inputRef.current.value}`)
   }
 
