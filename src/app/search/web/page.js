@@ -1,6 +1,6 @@
 const WebPage = () => {
   return (
-    <div>Web Page</div>
+    <div>WebPage</div>
   )
 }
 
