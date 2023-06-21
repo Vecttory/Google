@@ -15,7 +15,7 @@ const CountryLookup = () => {
   }, [])
 
   return (
-    <div className={`${country === placeholder && "bg-transparent text-transparent"} "border-b px-8 py-3 bg-[#f2f2f2] transition duration-300`}>{country}</div>
+    <div className={`${country === placeholder && "bg-transparent text-transparent"} border-b px-8 py-3 bg-[#f2f2f2] transition duration-300`}>{country}</div>
   )
 }
 
