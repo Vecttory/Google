@@ -3,9 +3,9 @@ import Link from "next/link"
 const WebPage = async ({ searchParams }) => {
   const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}`)
 
-  if (!response.ok) throw new Error("Something went wrong")
-
   const data = await response.json()
+
+  if (!response.ok) throw new Error("Something went wrong")
 
   const results = data.items
 
