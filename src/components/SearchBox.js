@@ -4,10 +4,11 @@ import { useRef, useEffect } from "react"
 import { RxCross2 } from "react-icons/rx"
 import { BsFillMicFill } from "react-icons/bs"
 import { AiOutlineSearch } from "react-icons/ai"
-import { useSearchParams, useRouter } from "next/navigation"
+import { useSearchParams, useRouter, usePathname } from "next/navigation"
 
 const SearchBox = () => {
   const router = useRouter()
+  const pathname = usePathname()
   const searchParams = useSearchParams()
   const searchTerm = searchParams.get("searchTerm")
   const inputRef = useRef("null")
@@ -19,7 +20,7 @@ const SearchBox = () => {
   function handleSubmit (e) {
     e.preventDefault()
     if (!inputRef.current.value.trim() || inputRef.current.value === searchTerm) return
-    router.push(`/search/web?searchTerm=${inputRef.current.value}`)
+    router.push(`/search/${pathname.includes("/web") ? "web" : "image"}?searchTerm=${inputRef.current.value}`)
   }
 
   return (
