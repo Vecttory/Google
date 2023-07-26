@@ -2,9 +2,12 @@ import WebSearchResults from "@/components/WebSearchResults"
 import Link from "next/link"
 
 const WebPage = async ({ searchParams }) => {
-  const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}`)
+  const startIndex = searchParams.start || 1
+  const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&start=${startIndex}`)
 
   const data = await response.json()
+
+  console.log(data)
 
   if (!response.ok) throw new Error("Something went wrong")
 

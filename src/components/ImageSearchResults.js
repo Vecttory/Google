@@ -1,8 +1,9 @@
 import Link from "next/link"
+import PaginationButtons from "./PaginationButtons"
 
 const ImageSearchResults = ({ data }) => {
   return (
-    <div className="mt-4 mb-8">
+    <div className="mt-4 mb-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-3 space-x-4">
         {data.items?.map(result => (
           <div key={result.link} className="mb-8">
@@ -23,6 +24,9 @@ const ImageSearchResults = ({ data }) => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="ml-16">
+        <PaginationButtons />
       </div>
     </div>
   )
