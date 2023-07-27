@@ -26,7 +26,7 @@ const SearchBox = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-grow border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-10 mr-5 items-center max-w-3xl"
+      className="flex flex-grow border border-gray-200 rounded-full shadow-lg px-6 py-3 sm:ml-10 sm:mr-5 items-center max-w-3xl"
     >
       <input ref={inputRef} type="text" className="w-full focus:outline-none"/>
       <RxCross2

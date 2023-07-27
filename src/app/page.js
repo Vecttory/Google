@@ -11,6 +11,7 @@ export default function Home () {
         <div className="relative">
           <Image
             priority
+            className="object-contain h-16"
             width={300}
             height={100}
             alt="Google logo"
